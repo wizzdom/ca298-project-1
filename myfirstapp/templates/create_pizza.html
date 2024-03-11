@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Create Pizza {% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mt-4 bg-dark shadow rounded">
+        <div class="card-body">
+          <div class="card-header bg-primary text-white rounded mt-2 mb-2">
+            <h3 class="mt-2 mb-2 text-center">Create Pizza 🍕</h3>
+            </div>
+          <form action="." method="POST">
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit" class="btn btn-primary rounded shadow mt-4">Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

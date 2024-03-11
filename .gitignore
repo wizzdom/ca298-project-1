@@ -1,0 +1,7 @@
+venv/
+db.sqlite3
+db.sqlite3*
+.DS_Store
+myfirstproject/__pycache__/
+myfirstapp/migrations/
+myfirstapp/__pycache__/

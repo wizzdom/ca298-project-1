@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block title %} User Signup {% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 rounded bg-dark text-white shadow">
+      <div class="card-body text-white">
+      <div class="card-header bg-primary text-white rounded shadow mt-2 mb-2">
+        <h3 class="mt-2 mb-2 text-center">Register</h3>
+        </div>
+      <form action="." method="POST" class="mt-4">
+        {% csrf_token %}
+        <table class="table text-white">
+          {{ form.as_table }}
+        </table>
+        <button type="submit" class="btn btn-primary rounded shadow mt-4 mb-4">Register</button>
+      </form>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
